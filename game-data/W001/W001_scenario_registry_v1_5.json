@@ -1,0 +1,1793 @@
+{
+  "schema_version": "1.5.0",
+  "project": "Живая история",
+  "heroine_id": "W001",
+  "title": "Чужие тетради",
+  "status": "design_only_not_executable",
+  "configuration": {
+    "pacing": "balanced",
+    "decision_frequency": "significant_only",
+    "life_span": "open"
+  },
+  "identity": {
+    "name": "Мафтуна",
+    "birth_year": 2026,
+    "origin": "сельская местность Самаркандской области"
+  },
+  "visible_stats": [
+    "health",
+    "happiness",
+    "autonomy",
+    "social_status"
+  ],
+  "characters": [
+    {
+      "id": "maftuna",
+      "name": "Мафтуна",
+      "birth_year": 2026,
+      "role": "heroine",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "mavlyuda",
+      "name": "Мавлюда",
+      "birth_year": 1997,
+      "role": "mother",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "bakhtiyor",
+      "name": "Бахтиёр",
+      "birth_year": 1992,
+      "role": "father",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "aziz",
+      "name": "Азиз",
+      "birth_year": 2017,
+      "role": "brother",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "saodat",
+      "name": "Саодат-опа",
+      "birth_year": 1969,
+      "role": "grandmother",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "zebo",
+      "name": "Зебо",
+      "birth_year": 2026,
+      "role": "friend_optional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "dilbar",
+      "name": "Дилбар-опа",
+      "birth_year": null,
+      "role": "teacher_optional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "kamilla",
+      "name": "Камилла",
+      "birth_year": null,
+      "role": "friend_conditional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "gulchehra",
+      "name": "Гульчехра",
+      "birth_year": null,
+      "role": "employer_conditional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "sardor",
+      "name": "Сардор",
+      "birth_year": null,
+      "role": "partner_optional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    },
+    {
+      "id": "nilufar",
+      "name": "Нилуфар",
+      "birth_year": null,
+      "role": "neighbor_optional",
+      "alive": null,
+      "relationship_state": "uninitialized",
+      "independent_agenda": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "W001-001",
+      "title": "Рождение",
+      "age_min": 0,
+      "age_max": 0,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-002",
+      "title": "Дождь по крыше",
+      "age_min": 2,
+      "age_max": 2,
+      "kind": "automatic",
+      "eligibility": "aziz_alive",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-003",
+      "title": "Первый Навруз",
+      "age_min": 4,
+      "age_max": 4,
+      "kind": "automatic",
+      "eligibility": "family_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D01",
+      "title": "Школа для одного ученика",
+      "age_min": 5,
+      "age_max": 5,
+      "kind": "decision",
+      "eligibility": "aziz_alive",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "ask_aziz",
+        "play_alone",
+        "ask_mother"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "ask_aziz",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "play_alone",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "ask_mother",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-004",
+      "title": "Туфли на вырост",
+      "age_min": 6,
+      "age_max": 6,
+      "kind": "automatic",
+      "eligibility": "school_enrolled",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-005",
+      "title": "Неправильный ответ",
+      "age_min": 7,
+      "age_max": 7,
+      "kind": "automatic",
+      "eligibility": "school_enrolled",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D02",
+      "title": "Два имени на обложке",
+      "age_min": 8,
+      "age_max": 8,
+      "kind": "decision",
+      "eligibility": "zebo_met",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "apologize",
+        "write_separately",
+        "insist"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "apologize",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "write_separately",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "insist",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-006",
+      "title": "День без света",
+      "age_min": 9,
+      "age_max": 9,
+      "kind": "automatic",
+      "eligibility": "family_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D03",
+      "title": "Экскурсия",
+      "age_min": 10,
+      "age_max": 10,
+      "kind": "decision",
+      "eligibility": "school_enrolled",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "ask_teacher",
+        "save_with_family",
+        "decline_trip"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "ask_teacher",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "save_with_family",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "decline_trip",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-007",
+      "title": "Первый опыт менструации",
+      "age_min": 11,
+      "age_max": 15,
+      "kind": "decision",
+      "eligibility": "menarche_eligible_and_not_occurred",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "ask_zebo",
+        "ask_teacher",
+        "call_mother"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "ask_zebo",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "ask_teacher",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "call_mother",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-008",
+      "title": "Книга без обложки",
+      "age_min": 14,
+      "age_max": 14,
+      "kind": "automatic",
+      "eligibility": "mavlyuda_alive",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D05",
+      "title": "Конкурс сочинений",
+      "age_min": 15,
+      "age_max": 15,
+      "kind": "decision",
+      "eligibility": "teacher_available",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "mentor",
+        "independent",
+        "decline"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "mentor",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "independent",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "decline",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-009",
+      "title": "Заказ из города",
+      "age_min": 16,
+      "age_max": 16,
+      "kind": "automatic",
+      "eligibility": "bakhtiyor_alive_and_working",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D06",
+      "title": "Больничный коридор",
+      "age_min": 17,
+      "age_max": 17,
+      "kind": "decision",
+      "eligibility": "father_health_crisis",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "apply_away",
+        "study_local",
+        "work_first",
+        "family_council"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "apply_away",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "study_local",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "work_first",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "family_council",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-A18",
+      "title": "Комната на четверых",
+      "age_min": 18,
+      "age_max": 18,
+      "kind": "automatic",
+      "eligibility": "route_A_and_admitted",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-B18",
+      "title": "Автобус в семь двадцать",
+      "age_min": 18,
+      "age_max": 18,
+      "kind": "automatic",
+      "eligibility": "route_B_and_enrolled",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-C18",
+      "title": "Первая зарплата",
+      "age_min": 18,
+      "age_max": 18,
+      "kind": "automatic",
+      "eligibility": "route_C_and_employed",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-F18",
+      "title": "Все за одним столом",
+      "age_min": 18,
+      "age_max": 18,
+      "kind": "automatic",
+      "eligibility": "route_D_and_family_available",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-A19",
+      "title": "Конверт на столе",
+      "age_min": 19,
+      "age_max": 19,
+      "kind": "decision",
+      "eligibility": "route_A",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "part_time",
+        "seek_support",
+        "return_home"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "part_time",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "seek_support",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "return_home",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-B20",
+      "title": "Не сегодня",
+      "age_min": 20,
+      "age_max": 20,
+      "kind": "decision",
+      "eligibility": "route_B",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "share_tasks",
+        "help_partly",
+        "decline_help"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "share_tasks",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "help_partly",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "decline_help",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-C20",
+      "title": "Ещё один год",
+      "age_min": 20,
+      "age_max": 20,
+      "kind": "decision",
+      "eligibility": "route_C",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "study_and_work",
+        "accept_promotion",
+        "prepare_to_leave"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "study_and_work",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "accept_promotion",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "prepare_to_leave",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-A21",
+      "title": "Не мой голос",
+      "age_min": 21,
+      "age_max": 21,
+      "kind": "automatic",
+      "eligibility": "route_A_and_project",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-B22",
+      "title": "Место, где меня знают",
+      "age_min": 22,
+      "age_max": 22,
+      "kind": "automatic",
+      "eligibility": "route_B_and_qualified",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-C22",
+      "title": "Чужая ошибка",
+      "age_min": 22,
+      "age_max": 22,
+      "kind": "automatic",
+      "eligibility": "route_C_and_employed",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-023",
+      "title": "Старые тетради",
+      "age_min": 23,
+      "age_max": 23,
+      "kind": "automatic",
+      "eligibility": "notebook_exists_and_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-024",
+      "title": "Человек у книжной полки",
+      "age_min": 24,
+      "age_max": 26,
+      "kind": "automatic",
+      "eligibility": "social_meeting_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D08",
+      "title": "Необязательный ответ",
+      "age_min": 25,
+      "age_max": 28,
+      "kind": "decision",
+      "eligibility": "sardor_relationship_active",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "discuss_expectations",
+        "meet_family",
+        "not_ready",
+        "end_relationship"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "discuss_expectations",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "meet_family",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "not_ready",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "end_relationship",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-027",
+      "title": "Работа, которую не видно",
+      "age_min": 27,
+      "age_max": 27,
+      "kind": "decision",
+      "eligibility": "employed_and_extra_duties_offered",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "negotiate",
+        "accept_for_experience",
+        "decline"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "negotiate",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "accept_for_experience",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "decline",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-028",
+      "title": "Свадьба Азиза",
+      "age_min": 28,
+      "age_max": 28,
+      "kind": "automatic",
+      "eligibility": "aziz_marriage_event",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-029",
+      "title": "Письмо себе",
+      "age_min": 29,
+      "age_max": 29,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-A30",
+      "title": "Три ученика",
+      "age_min": 30,
+      "age_max": 30,
+      "kind": "automatic",
+      "eligibility": "teaching_route_and_students",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-C30",
+      "title": "Поставка не пришла",
+      "age_min": 30,
+      "age_max": 30,
+      "kind": "automatic",
+      "eligibility": "business_or_procurement",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-B31",
+      "title": "Чужая должность",
+      "age_min": 31,
+      "age_max": 31,
+      "kind": "automatic",
+      "eligibility": "employed_and_promotion_offered",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D31",
+      "title": "Снова студентка",
+      "age_min": 31,
+      "age_max": 31,
+      "kind": "automatic",
+      "eligibility": "adult_education_enrolled",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D09B",
+      "title": "Помещение на первом этаже",
+      "age_min": 32,
+      "age_max": 32,
+      "kind": "decision",
+      "eligibility": "teaching_route_and_space_available",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "rent",
+        "continue_small",
+        "seek_partner",
+        "postpone"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "rent",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "continue_small",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "seek_partner",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "postpone",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-032",
+      "title": "Ключи на столе",
+      "age_min": 32,
+      "age_max": 35,
+      "kind": "automatic",
+      "eligibility": "housing_change",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-C33",
+      "title": "Партнёрство",
+      "age_min": 33,
+      "age_max": 33,
+      "kind": "decision",
+      "eligibility": "business_and_partner_offer",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "formal_agreement",
+        "remain_independent",
+        "pilot_project"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "formal_agreement",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "remain_independent",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "pilot_project",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-B34",
+      "title": "Человек, которого не повысили",
+      "age_min": 34,
+      "age_max": 34,
+      "kind": "automatic",
+      "eligibility": "management_role",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-034",
+      "title": "Воскресный обед",
+      "age_min": 34,
+      "age_max": 34,
+      "kind": "automatic",
+      "eligibility": "family_meeting_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-A35",
+      "title": "Девочка у двери",
+      "age_min": 35,
+      "age_max": 35,
+      "kind": "automatic",
+      "eligibility": "teaching_project_and_student_exists",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D36",
+      "title": "Предложение из прошлого",
+      "age_min": 36,
+      "age_max": 36,
+      "kind": "automatic",
+      "eligibility": "gulchehra_contact_exists",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D10",
+      "title": "Кто должен успеть",
+      "age_min": 36,
+      "age_max": 39,
+      "kind": "decision",
+      "eligibility": "family_care_need_and_father_alive",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "share_care",
+        "go_self",
+        "arrange_help",
+        "speak_to_aziz"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "share_care",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "go_self",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "arrange_help",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "speak_to_aziz",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-040",
+      "title": "Сорок свечей",
+      "age_min": 40,
+      "age_max": 40,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-041",
+      "title": "Книга с пометками",
+      "age_min": 41,
+      "age_max": 41,
+      "kind": "automatic",
+      "eligibility": "mavlyuda_alive_and_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D13",
+      "title": "Письмо из прошлого",
+      "age_min": 42,
+      "age_max": 42,
+      "kind": "decision",
+      "eligibility": "writing_competition_and_dilbar_available",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "speak",
+        "small_meeting",
+        "decline"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "speak",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "small_meeting",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "decline",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-043",
+      "title": "Азиз больше не мальчик",
+      "age_min": 43,
+      "age_max": 43,
+      "kind": "automatic",
+      "eligibility": "aziz_alive_and_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D14",
+      "title": "Цена собственного дела",
+      "age_min": 44,
+      "age_max": 44,
+      "kind": "decision",
+      "eligibility": "professional_change_offer",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "gradual",
+        "expand",
+        "stay_small"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "gradual",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "expand",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "stay_small",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-045",
+      "title": "Дочь, которая спорит",
+      "age_min": 45,
+      "age_max": 45,
+      "kind": "automatic",
+      "eligibility": "daughter_exists_and_teen",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D15",
+      "title": "Невыполненное обещание",
+      "age_min": 46,
+      "age_max": 46,
+      "kind": "decision",
+      "eligibility": "open_promise_with_zebo",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "set_date",
+        "call",
+        "no_promise"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "set_date",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "call",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "no_promise",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D16",
+      "title": "Усталость",
+      "age_min": 47,
+      "age_max": 47,
+      "kind": "decision",
+      "eligibility": "sustained_high_load",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "review_duties",
+        "ask_for_help",
+        "schedule_rest",
+        "continue"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "review_duties",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "ask_for_help",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "schedule_rest",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "continue",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-048",
+      "title": "Разговор у ворот",
+      "age_min": 48,
+      "age_max": 48,
+      "kind": "automatic",
+      "eligibility": "bakhtiyor_alive_and_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-049",
+      "title": "Не та жизнь",
+      "age_min": 49,
+      "age_max": 49,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-050",
+      "title": "Пятьдесят",
+      "age_min": 50,
+      "age_max": 50,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-051",
+      "title": "Бывшая ученица",
+      "age_min": 51,
+      "age_max": 51,
+      "kind": "automatic",
+      "eligibility": "former_student_exists",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-052",
+      "title": "Список задач",
+      "age_min": 52,
+      "age_max": 52,
+      "kind": "automatic",
+      "eligibility": "professional_role_change",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D17",
+      "title": "Кому доверить дело",
+      "age_min": 53,
+      "age_max": 53,
+      "kind": "decision",
+      "eligibility": "professional_transition_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "delegate",
+        "restructure",
+        "new_project",
+        "pause"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "delegate",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "restructure",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "new_project",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "pause",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-054",
+      "title": "Дом, который меняется",
+      "age_min": 54,
+      "age_max": 54,
+      "kind": "automatic",
+      "eligibility": "parental_home_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-055",
+      "title": "Встреча выпускников",
+      "age_min": 55,
+      "age_max": 55,
+      "kind": "automatic",
+      "eligibility": "school_reunion_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-056",
+      "title": "Разговор с Азизом",
+      "age_min": 56,
+      "age_max": 56,
+      "kind": "automatic",
+      "eligibility": "aziz_alive_and_accessible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D18",
+      "title": "Что оставить себе",
+      "age_min": 57,
+      "age_max": 57,
+      "kind": "decision",
+      "eligibility": "new_personal_goal_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "new_project",
+        "old_hobby",
+        "trip",
+        "postpone"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "new_project",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "old_hobby",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "trip",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "postpone",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-058",
+      "title": "Новые соседи",
+      "age_min": 58,
+      "age_max": 58,
+      "kind": "automatic",
+      "eligibility": "neighbor_move_event",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-059",
+      "title": "Письмо на завтра",
+      "age_min": 59,
+      "age_max": 59,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-060",
+      "title": "Шестьдесят",
+      "age_min": 60,
+      "age_max": 60,
+      "kind": "automatic",
+      "eligibility": "always",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-062",
+      "title": "Новый ученик",
+      "age_min": 62,
+      "age_max": 62,
+      "kind": "automatic",
+      "eligibility": "mentorship_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-065",
+      "title": "Новый город",
+      "age_min": 65,
+      "age_max": 65,
+      "kind": "automatic",
+      "eligibility": "travel_possible",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-068",
+      "title": "Старые фотографии",
+      "age_min": 68,
+      "age_max": 68,
+      "kind": "automatic",
+      "eligibility": "archive_and_companion",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [],
+      "outcomes": [],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    },
+    {
+      "scene_id": "W001-D19",
+      "title": "Новый распорядок",
+      "age_min": 70,
+      "age_max": 130,
+      "kind": "decision",
+      "eligibility": "support_needs_change",
+      "once": true,
+      "status": "outline_or_partial_dialogue",
+      "choice_ids": [
+        "adapt_routine",
+        "arrange_support",
+        "review_housing",
+        "maintain_with_risk_review"
+      ],
+      "outcomes": [
+        {
+          "choice_id": "adapt_routine",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "arrange_support",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "review_housing",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        },
+        {
+          "choice_id": "maintain_with_risk_review",
+          "immediate": "TO_AUTHOR",
+          "npc_reactions": "TO_AUTHOR",
+          "memory_effects": "TO_AUTHOR",
+          "future_hooks": "TO_AUTHOR"
+        }
+      ],
+      "fallback": "skip_if_not_eligible",
+      "source": "W001 authored narrative drafts v1.0-v1.4"
+    }
+  ],
+  "memories": [
+    {
+      "id": "aziz_shared_toy",
+      "origin_scene": "W001-002",
+      "requires_occurrence": true
+    },
+    {
+      "id": "played_school_with_aziz",
+      "origin_scene": "W001-D01",
+      "requires_occurrence": true
+    },
+    {
+      "id": "aziz_gifted_notebook",
+      "origin_scene": "W001-D01",
+      "requires_occurrence": true
+    },
+    {
+      "id": "friendship_zebo",
+      "origin_scene": "W001-005",
+      "requires_occurrence": true
+    },
+    {
+      "id": "zebo_story_conflict",
+      "origin_scene": "W001-D02",
+      "requires_occurrence": true
+    },
+    {
+      "id": "school_trip_outcome",
+      "origin_scene": "W001-D03",
+      "requires_occurrence": true
+    },
+    {
+      "id": "first_period_experience",
+      "origin_scene": "W001-007",
+      "requires_occurrence": true
+    },
+    {
+      "id": "mother_unfulfilled_plans",
+      "origin_scene": "W001-008",
+      "requires_occurrence": true
+    },
+    {
+      "id": "writing_competition",
+      "origin_scene": "W001-D05",
+      "requires_occurrence": true
+    },
+    {
+      "id": "father_health_crisis",
+      "origin_scene": "W001-D06",
+      "requires_occurrence": true
+    },
+    {
+      "id": "education_decision_17",
+      "origin_scene": "W001-D06",
+      "requires_occurrence": true
+    },
+    {
+      "id": "first_night_away_from_home",
+      "origin_scene": "W001-A18",
+      "requires_occurrence": true
+    },
+    {
+      "id": "family_budget_agreement",
+      "origin_scene": "W001-F18",
+      "requires_occurrence": true
+    },
+    {
+      "id": "mother_dreams_revisited",
+      "origin_scene": "W001-041",
+      "requires_occurrence": true
+    },
+    {
+      "id": "letter_to_future_self",
+      "origin_scene": "W001-059",
+      "requires_occurrence": true
+    }
+  ],
+  "plot_threads": [
+    "education",
+    "family",
+    "finances",
+    "relationships",
+    "voice",
+    "open_life"
+  ],
+  "engine_contract": {
+    "event_order": [
+      "update_world",
+      "update_npcs",
+      "validate_eligibility",
+      "filter_conflicts",
+      "prioritize_open_threads",
+      "sample_event",
+      "apply_choice_and_outcome",
+      "write_event_log",
+      "save_snapshot"
+    ],
+    "hard_invariants": [
+      "dead_npc_cannot_participate",
+      "objects_require_provenance",
+      "no_child_without_birth_or_adoption_record",
+      "no_profession_without_history",
+      "menarche_once",
+      "age_is_derived_from_birth_year",
+      "choices_only_pause_for_significant_events",
+      "no_forced_ending_at_60"
+    ],
+    "probabilities": "not_calibrated_do_not_invent",
+    "seeded_rng": true,
+    "saves_versioned": true
+  },
+  "open_issues": [
+    "Author full dialogue and every choice outcome",
+    "Define NPC personality distributions and independence",
+    "Source demographic/medical probability tables",
+    "Resolve alternate scene substitutions",
+    "Define actual engine-compatible expression grammar",
+    "Playtest and validate before site integration"
+  ]
+}

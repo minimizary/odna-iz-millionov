@@ -1,0 +1,13 @@
+{
+  "total_scenes": 67,
+  "decisions": 21,
+  "duplicate_ids": 0,
+  "invalid_age_ranges": [],
+  "missing_choice_ids": [],
+  "known_issues": [
+    "D01 requires outcome-specific notebook flag",
+    "D06 father illness must be conditional if true randomness is desired",
+    "Age 60+ needs recurring event generator beyond one-time scenes",
+    "No calibrated probabilities or complete dialogue outcomes yet"
+  ]
+}
